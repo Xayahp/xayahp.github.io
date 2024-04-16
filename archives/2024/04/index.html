@@ -3,7 +3,7 @@
 <html lang="jp">
 <head>
     <meta charset="utf-8" />
-    <title>Tags: daily | Xayah Music TV</title>
+    <title>Archives | Xayah Music TV</title>
     <meta name="author" content="Xayah" />
     <meta name="description" content="Welcome to Xayah Music TV" />
     <meta name="keywords" content="Xayah, Music, TV, Xayah Music TV, Xayah Music, Xayah TV, Xayah Blog, Xayah Music TV Blog, Xayah Music Blog, Xayah TV Blog, Xayah Music TV Blog" />
@@ -38,6 +38,8 @@
 <script src="/js/lib/preview.js"></script>
 
 
+
+<script src="/js/lib/search.js"></script>
 
 
 
@@ -135,107 +137,95 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            <div id="tags">
+            
+<div id="archives">
     
-    <div class="categories-tags">
-        
-        
-        
-        <span>
-            <a href="/tags/daily/" style="background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%)">
-                <span class="icon">
-                    <i class="fa-solid fa-tags fa-fw"></i>
-                </span>
-                daily
-            </a>
-        </span>
-        
-        
-        
-        
-    </div>
+    <input id="search-bar" class="input" placeholder="Serach" v-model="rawSearch" />
     
-    <div class="timeline">
-        <div class="timeline-tail"></div>
-        <div class="timeline-content">
-            <div class="item-time">2024/4/16</div>
-            <a href="/2024/04/16/2024-04-16/">
-                <h3>Tue Apr 16 2024 09:00:00 GMT+0900 (日本标准时间)</h3>
-            </a>
-            <div class="info">
-                
-                
-                <span class="tags">
-                    <span class="icon">
-                        <i class="fa-solid fa-tags fa-fw"></i>
-                    </span>
+    <div id="timeline-wrap" ref="timeline">
+        
+        <div class="timeline" data-title="落入这场大雨">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2024/3/24</div>
+                <a href="/2024/03/24/2024-03-24/">
+                    <h3>落入这场大雨</h3>
+                </a>
+                <div class="info">
                     
                     
-                    <span class="tag">
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
                         
-                        <a href="/tags/daily/" style="color: #ffa2c4">daily</a>
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/daily/" style="color: #ffa2c4">daily</a>
+                        </span>
+                        
                     </span>
                     
-                </span>
-                
+                </div>
             </div>
         </div>
-    </div>
-    
-    <div class="timeline">
-        <div class="timeline-tail"></div>
-        <div class="timeline-content">
-            <div class="item-time">2024/3/26</div>
-            <a href="/2024/03/26/2024-03-26/">
-                <h3>落入这场大雨（二）</h3>
-            </a>
-            <div class="info">
-                
-                
-                <span class="tags">
-                    <span class="icon">
-                        <i class="fa-solid fa-tags fa-fw"></i>
-                    </span>
+        
+        <div class="timeline" data-title="落入这场大雨（二）">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2024/3/26</div>
+                <a href="/2024/03/26/2024-03-26/">
+                    <h3>落入这场大雨（二）</h3>
+                </a>
+                <div class="info">
                     
                     
-                    <span class="tag">
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
                         
-                        <a href="/tags/daily/" style="color: #00a596">daily</a>
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/daily/" style="color: #00a596">daily</a>
+                        </span>
+                        
                     </span>
                     
-                </span>
-                
+                </div>
             </div>
         </div>
-    </div>
-    
-    <div class="timeline">
-        <div class="timeline-tail"></div>
-        <div class="timeline-content">
-            <div class="item-time">2024/3/24</div>
-            <a href="/2024/03/24/2024-03-24/">
-                <h3>落入这场大雨</h3>
-            </a>
-            <div class="info">
-                
-                
-                <span class="tags">
-                    <span class="icon">
-                        <i class="fa-solid fa-tags fa-fw"></i>
-                    </span>
+        
+        <div class="timeline" data-title="tueapr16202409:00:00gmt+0900(日本标准时间)">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2024/4/16</div>
+                <a href="/2024/04/16/2024-04-16/">
+                    <h3>Tue Apr 16 2024 09:00:00 GMT+0900 (日本标准时间)</h3>
+                </a>
+                <div class="info">
                     
                     
-                    <span class="tag">
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
                         
-                        <a href="/tags/daily/" style="color: #03a9f4">daily</a>
+                        
+                        <span class="tag">
+                            
+                            <a href="/tags/daily/" style="color: #00bcd4">daily</a>
+                        </span>
+                        
                     </span>
                     
-                </span>
-                
+                </div>
             </div>
         </div>
+        
     </div>
-    
 </div>
 
             <footer id="footer">
